@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './Fileupload.css';
 
 const FileUploader = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -23,10 +23,9 @@ const FileUploader = () => {
       const formData = new FormData();
       formData.append('file', selectedFile);
 
-      // Simulate API request/response
+     
       setTimeout(() => {
-        // Replace this with your actual API call
-        // Here, we're just logging the file path and a success message
+  
         console.log('File path:', selectedFile);
         setUploadStatus('Upload successful!');
       }, 2000);
