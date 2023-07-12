@@ -1,3 +1,5 @@
+## Deployed URL
+        https://master.d3002dhrx1t85f.amplifyapp.com/
 ## File Uploader
     This is a React component that allows users to upload PDF files. It provides a user interface for selecting a PDF file, displaying its details, previewing the       file, and uploading it to a server.
 
