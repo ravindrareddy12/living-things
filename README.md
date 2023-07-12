@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+## File Uploader
+    This is a React component that allows users to upload PDF files. It provides a user interface for selecting a PDF file, displaying its details, previewing the       file, and uploading it to a server.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Installation
+  To use this component in your React project, follow these steps:
+  
+  Copy the code of the FileUploader component.
+  Create a new file in your project (e.g., FileUploader.js) and paste the copied code into it.
+  Save the file.
+## Usage
+  Once you have the FileUploader component in your project, you can use it in other components as follows:
 
-## Available Scripts
+## jsx
+    Copy code
+    import React from 'react';
+    import FileUploader from './FileUploader';
+    
+    const App = () => {
+      return (
+        <div>
+          <h1>My App</h1>
+          <FileUploader />
+        </div>
+      );
+    };
+    
+    export default App;
+    In the above example, the FileUploader component is imported and rendered within the App component.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Functionality
+    The FileUploader component provides the following functionality:
+    
+    Allows the user to select a PDF file using a file input field.
+    Validates that the selected file is a PDF.
+    Displays an error message if a non-PDF file is selected.
+    Displays the selected file's details, such as the file path.
+    Provides an upload button to initiate the file upload process.
+    Simulates an API request/response for file uploading.
+    Logs the file path and displays a success message when the upload is complete.
+    Displays a PDF preview of the selected file.
+    Customization
+You can customize the component's appearance by modifying the CSS classes defined in the App.css file.
